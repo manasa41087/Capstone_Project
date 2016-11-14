@@ -1,0 +1,47 @@
+                        Indian Premier League- Player Evaluation
+
+High Level Description:
+    Indian Premier League is a professional 20-20 cricket League in India held during summer every year by franchise teams representing different Indian cities. The league was founded by Board of Cricket Control in India(BCCI) in 2007 after the stupendous victory of India in the World Cup T20 series. The brand of IPL was estimated to be US$4.5 billion in 2016.Around 580 matches have been played so far and the total number of players in league are about 480. Every year the players are auctioned across different teams adhering to certain rules established by the cricket board
+    My project is to predict the best value contract price for all the players in the upcoming season (April 2017) based on their performance, popularity, brand value
+
+How are you presenting your work?
+    This will be a presentation with visualizations
+
+Techniques and my approach this project: -
+1)Feature Engineering
+ Analysis on the performance of the all the players. Create a Key Performance Index and other new features that reflects this performance.
+Important features would be batting average, bowling average, strike rate, field performance, current form. Every franchise has an upper limit for the money they would be investing on all players. This limit should accommodate price for retaining any players from the current team and also buying new players. This is a very important feature to take into account.
+http://www.relianceiccrankings.com/ provides a rank to the players obviously player a very important effect on the price. This is valuable data as it ranks players in different tournaments including Test Cricket, ODI, twenty20
+
+Scrape the contract price for all the different players for each season. This will be my response. I will train and test my data for each season with the previous seasons barring season 1.
+
+2)Techniques-
+  Initially, I will to use Linear Regression to figure out which feature is significantly relevant in predicting my response and also drop the least insignificant ones.
+
+Trees and forests will be good modelling techniques to classify players into different salary zones (High, Medium, Low). The high range which will consist the most experienced, golden track record players. The Medium range will have the majority of the players. Players in this zone are to watch out for. Good performance in one season can do astronomically increase their price. The tricky part will the players in the low zone who are most probably the debutants and have no previous track record. One way of getting this information is get data from Ranji Trophy (under 19 tournament) and add as feature to my current data
+
+3)Models that I would like to use: -
+Random Forest
+Boosting
+Support Vector Machines
+Naïve Bayes
+Classification and Regression Trees
+Ordinary Least Square
+
+
+Expected Problems: -
+
+Some teams hire new players and we will have no previous information from the IPL data set – Will use KNN to figure out the best values for different features
+
+Also sometimes, other important Cricket games like World Cup which happens every four years has a major effect on key stand out performances by certain players. Not sure how to tackle this problem yet. May be create an additional feature which takes into account performances outside IPL series
+
+How far do you anticipate to take the project in the allotted time?
+     I should be able to predict the contract price of all the existing players for the upcoming season in 2017.If time permits I would also like to use support vector machines to predict the performances of the players
+
+Any other repos, libraries and other tools you are Considering-Acknowledging them?
+Yes, I will acknowledge and list all sources that I use as I go forward in the process
+Wikipedia
+https://en.wikipedia.org/wiki/Indian_Premier_League
+http://www.espncricinfo.com/india/content/story/949809.html
+http://cricsheet.org/
+http://www.relianceiccrankings.com/
